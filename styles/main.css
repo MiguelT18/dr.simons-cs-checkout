@@ -1,0 +1,194 @@
+@charset "UTF-8";
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+header {
+  padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .header-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0 20px;
+}
+header .header-text-container .header-title {
+  color: #3761b0;
+  margin-bottom: 3px;
+  font-size: clamp(28px, 8vw, 38px);
+  font-family: poppins;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+header .header-text-container .header-text {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(18px, 5vw, 20px);
+}
+header .video-wrapper {
+  max-width: 100%;
+  height: auto;
+}
+header .video-wrapper .video {
+  max-width: 100%;
+}
+
+main {
+  padding: 0 18px;
+}
+main .main-instructions-container {
+  max-width: 900px;
+  margin: 20px auto 0;
+  font-size: clamp(18px, 5vw, 20px);
+  font-family: "Open Sans", sans-serif;
+  color: #3e3e3e;
+  line-height: 140%;
+}
+main .main-instructions-container .instructions-description {
+  margin-bottom: 10px;
+}
+main .main-instructions-container ul {
+  margin: 0;
+  padding: 0 0 0 15px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+main .main-instructions-container li::before {
+  content: "✅";
+  margin-right: 10px;
+}
+main .transf-button {
+  display: block;
+  color: #fff;
+  background-color: #3761b0;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 10px;
+  border-radius: 6px;
+  margin: 25px auto 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+main .transf-button:hover {
+  background-color: #224688;
+}
+main .transf-button:active {
+  background-color: #0d2b5a;
+  scale: 0.95;
+}
+main .support-float-button-mob {
+  display: block;
+  content: " ";
+  width: 250px;
+  height: 150px;
+  scale: -1;
+  rotate: 180deg;
+  left: 5%;
+  top: 83%;
+  position: fixed;
+  background-image: url("../assets/icons/whatsapp-mob.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main .support-float-button-mob:active {
+  transform: scale(0.9);
+  transition-timing-function: linear;
+}
+main .support-button {
+  display: block;
+  color: #fff;
+  background-color: #17b450;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px 10px;
+  border-radius: 6px;
+  margin: 10px auto 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+main .support-button:hover {
+  background-color: #0d8f3d;
+}
+main .support-button:active {
+  background-color: #0a6f2e;
+  scale: 0.95;
+}
+
+footer {
+  background-color: #3761b0;
+  padding: 20px 0;
+}
+footer .footer-text {
+  color: #fff;
+  text-align: center;
+  line-height: 140%;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(18px, 5vw, 20px);
+}
+
+@media screen and (min-width: 1100px) {
+  .support-float-button-mob {
+    width: 300px !important;
+  }
+}
+@media screen and (max-width: 630px) {
+  .hotmart-checkout {
+    height: 1360px !important;
+  }
+}
+@media screen and (max-width: 520px) {
+  .hotmart-checkout {
+    height: 1400px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hotmart-checkout {
+    height: 1480px !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  .hotmart-checkout {
+    height: 1550px !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  .hotmart-checkout {
+    height: 1600px !important;
+  }
+}
+@media screen and (max-width: 330px) {
+  .hotmart-checkout {
+    height: 1650px !important;
+  }
+}/*# sourceMappingURL=main.css.map */

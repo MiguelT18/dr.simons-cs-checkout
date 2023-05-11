@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hotmart Checkout</title>
+        <link rel="stylesheet" href="./styles/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="header-text-container">
+                <h1 class="header-title">Pago de Consulta</h1>
+                <p class="header-text">
+                    Para realizar tu pago, por favor sigue estos sencillos pasos
+                    viendo el siguiente video:👇👇
+                </p>
+            </div>
+            <div class="video-wrapper">
+                <iframe
+                    class="video"
+                    width="600"
+                    height="315"
+                    src="https://www.youtube.com/embed/9iGM7S8bx3o"
+                    frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-instructions-container">
+                <p class="instructions-description">
+                    Sigue las instrucciones y completa el formulario de pago
+                    para conseguir una consulta con el Dr. Cristian Simons:
+                </p>
+                <ul>
+                    <li>
+                        Si optas por Hotmart, completa los datos del checkout
+                        que aparecen en la página. Si prefieres la transferencia
+                        bancaria, comunícate con el número de soporte a través
+                        del botón de whatsapp.
+                    </li>
+                    <li>
+                        Una vez que hayas completado el pago, deberás enviar tu
+                        comprobante de pago junto con tu nombre completo y
+                        correo a nuestro contacto de soporte
+                    </li>
+                    <li>
+                        Confirma tu cita y espera a que el Dr. Simons se ponga
+                        en contacto contigo.
+                    </li>
+                    <li>En caso de dudas, contacta al equipo de soporte.</li>
+                </ul>
+            </div>
+
+            <a class="transf-button" href="#/transferencia"
+                >Transferencia Bancaria</a
+            >
+
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="support-float-button-mob"
+                href="https://wa.link/9a6ei5"></a>
+
+            <!-- Widget Checkout -->
+            <div class="hotmart-checkout-container">
+                <iframe
+                    class="hotmart-checkout"
+                    name="X-Frame-Options"
+                    src="https://pay.hotmart.com/E77601218Y?checkoutMode=10&bid=1683751643603"
+                    style="width: 100%; height: 1150px"
+                    frameborder="0"
+                    scrolling="no">
+                    ></iframe
+                >
+            </div>
+
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                class="support-button"
+                href="https://wa.link/9a6ei5"
+                >Contacto de Soporte</a
+            >
+        </main>
+
+        <footer>
+            <p class="footer-text">
+                © 2023 - La Fabrica Digital<br />
+                Todos los derechos reservados.
+            </p>
+        </footer>
+    </body>
+</html>

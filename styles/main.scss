@@ -1,0 +1,249 @@
+//!==============================
+
+//! Variables
+
+// Paleta de Colores
+$dark-blue: #3761b0;
+$light-blue: #6ea7d6;
+$cream-blue: #afcae3;
+$cream-white: #e9f4fc;
+$dark-grey: #3e3e3e;
+
+// Fuentes
+$font-open-sans: "Open Sans", sans-serif;
+$font-poppins: "Poppins", sans-serif;
+
+// Tamaño de fuentes
+$font-size-small: clamp(18px, 5vw, 20px);
+$font-size-medium: clamp(20px, 5vw, 24px);
+$font-size-large: clamp(28px, 8vw, 38px);
+
+//? Reseteo de los estilos por defecto de los navegadores
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+//!==============================
+
+//? ===================
+//? Header Styles
+//? ===================
+
+header {
+    padding: 0 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0 20px;
+        .header-title {
+            color: $dark-blue;
+            margin-bottom: 3px;
+            font: {
+                size: $font-size-large;
+                family: poppins;
+            }
+            text: {
+                align: center;
+                transform: uppercase;
+                shadow: -3px 3px 5px rgba(0, 0, 0, 0.4);
+            }
+        }
+        .header-text {
+            text-align: center;
+            font: {
+                family: $font-open-sans;
+                size: $font-size-small;
+            }
+        }
+    }
+    .video-wrapper {
+        max-width: 100%;
+        height: auto;
+        .video {
+            max-width: 100%;
+        }
+    }
+}
+
+//? ===================
+//? Main Styles
+//? ===================
+
+main {
+    padding: 0 18px;
+    .main-instructions-container {
+        max-width: 900px;
+        margin: 20px auto 0;
+        font-size: $font-size-small;
+        font-family: $font-open-sans;
+        color: $dark-grey;
+        line-height: 140%;
+        .instructions-description {
+            margin-bottom: 10px;
+        }
+        ul {
+            margin: 0;
+            padding: 0 0 0 15px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        li::before {
+            content: "✅";
+            margin-right: 10px;
+        }
+    }
+
+    .transf-button {
+        display: block;
+        color: #fff;
+        background-color: #3761b0;
+        width: fit-content;
+        padding: 15px 10px;
+        border-radius: 6px;
+        margin: 25px auto 25px;
+        font: {
+            family: $font-open-sans;
+            weight: bold;
+        }
+        text: {
+            transform: uppercase;
+            align: center;
+        }
+    }
+    .transf-button:hover {
+        background-color: #224688;
+    }
+    .transf-button:active {
+        background-color: #0d2b5a;
+        scale: 0.95;
+    }
+
+    .support-float-button-mob {
+        display: block;
+        content: " ";
+        width: 250px;
+        height: 150px;
+        scale: (-1);
+        rotate: (180deg);
+        left: 5%;
+        top: 83%;
+        position: fixed;
+        background: {
+            image: url("../assets/icons/whatsapp-mob.png");
+            position: center;
+            repeat: no-repeat;
+            size: contain;
+        }
+    }
+    .support-float-button-mob:active {
+        transform: scale(0.9);
+        transition-timing-function: linear;
+    }
+
+    .support-button {
+        display: block;
+        color: #fff;
+        background-color: #17b450;
+        width: fit-content;
+        padding: 15px 10px;
+        border-radius: 6px;
+        margin: 10px auto 25px;
+        font: {
+            family: $font-open-sans;
+            weight: bold;
+        }
+        text: {
+            transform: uppercase;
+            align: center;
+        }
+    }
+    .support-button:hover {
+        background-color: #0d8f3d;
+    }
+    .support-button:active {
+        background-color: #0a6f2e;
+        scale: 0.95;
+    }
+}
+
+//? ===================
+//? Footer Styles
+//? ===================
+
+footer {
+    background-color: #3761b0;
+    padding: 20px 0;
+    .footer-text {
+        color: #fff;
+        text-align: center;
+        line-height: 140%;
+        font: {
+            family: $font-open-sans;
+            size: $font-size-small;
+        }
+    }
+}
+
+//? =================================
+//? Media Queries - Responsive Design
+//? =================================
+
+@media screen and (min-width: 1100px) {
+    .support-float-button-mob {
+        width: 300px !important;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .hotmart-checkout {
+        height: 1360px !important;
+    }
+}
+@media screen and (max-width: 520px) {
+    .hotmart-checkout {
+        height: 1400px !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .hotmart-checkout {
+        height: 1480px !important;
+    }
+}
+@media screen and (max-width: 430px) {
+    .hotmart-checkout {
+        height: 1550px !important;
+    }
+}
+@media screen and (max-width: 390px) {
+    .hotmart-checkout {
+        height: 1600px !important;
+    }
+}
+@media screen and (max-width: 330px) {
+    .hotmart-checkout {
+        height: 1650px !important;
+    }
+}
