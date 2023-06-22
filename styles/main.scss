@@ -15,7 +15,7 @@ $font-poppins: "Poppins", sans-serif;
 
 // Tamaño de fuentes
 $font-size-small: clamp(18px, 5vw, 20px);
-$font-size-medium: clamp(20px, 5vw, 24px);
+$font-size-medium: clamp(19px, 5vw, 24px);
 $font-size-large: clamp(28px, 8vw, 38px);
 
 //? Reseteo de los estilos por defecto de los navegadores
@@ -24,6 +24,7 @@ body {
     padding: 0;
     margin: 0;
 }
+
 h1,
 h2,
 h3,
@@ -32,15 +33,98 @@ h5,
 h6 {
     margin: 0;
 }
+
 p {
     margin: 0;
 }
+
 a {
     color: #000;
     text-decoration: none;
 }
 
 //!==============================
+
+//? ===================
+//? Countdown Styles
+//? ===================
+
+@mixin countdownBlockDisplay() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+@mixin labelStyles() {
+    font-family: $font-open-sans;
+    font-size: $font-size-small;
+}
+@mixin countStyles() {
+    font-size: $font-size-medium;
+    font-family: $font-poppins;
+}
+
+.countdown-container {
+    background-color: rgb(189, 24, 24);
+    padding: 15px 0;
+    // Offer discount
+    .offer {
+        text-align: center;
+        color: #fff;
+        font-size: $font-size-medium;
+        font-family: $font-poppins;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    // Countdown main Styles
+    .countdown {
+        display: flex;
+        justify-content: center;
+        gap: 20px;    
+    
+        // Countdown blocks
+        .days-block {
+            @include countdownBlockDisplay();
+            .days-count { // Count
+                @include countStyles();
+            }
+            .days-text { // Label
+                @include labelStyles();
+            }
+        }
+    
+        .hours-block {
+            @include countdownBlockDisplay();
+            .hours-count { // Count
+                @include countStyles();
+            }
+            .hours-text { // Label
+                @include labelStyles();
+            }
+        }
+    
+        .minutes-block {
+            @include countdownBlockDisplay();
+            .minutes-count { // Count
+                @include countStyles();
+            }
+            .minutes-text { // Label
+                @include labelStyles();
+            }
+        }
+    
+        .seconds-block {
+            @include countdownBlockDisplay();
+            .seconds-count { // Count
+                @include countStyles();
+            }
+            .seconds-text { // Label
+                @include labelStyles();
+            }
+        }
+    }
+}
 
 //? ===================
 //? Header Styles
@@ -53,38 +137,46 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .header-text-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 10px 0 20px;
+
         .header-title {
             color: $dark-blue;
             margin-bottom: 3px;
+
             font: {
                 size: $font-size-large;
                 family: poppins;
             }
+
             text: {
                 align: center;
                 transform: uppercase;
                 shadow: -3px 3px 5px rgba(0, 0, 0, 0.4);
             }
         }
+
         .header-text {
             text-align: center;
+
             font: {
                 family: $font-open-sans;
                 size: $font-size-small;
             }
         }
     }
+
     .video-wrapper {
         position: relative;
         padding-bottom: 56.25%;
         max-width: 1080px;
         width: 100%;
         height: 100%;
+
         iframe {
             position: absolute;
             top: 0;
@@ -101,6 +193,7 @@ header {
 
 main {
     padding: 0 18px;
+
     .main-instructions-container {
         max-width: 900px;
         margin: 20px auto 0;
@@ -108,9 +201,11 @@ main {
         font-family: $font-open-sans;
         color: $dark-grey;
         line-height: 140%;
+
         .instructions-description {
             margin-bottom: 10px;
         }
+
         ul {
             margin: 0;
             padding: 0 0 0 15px;
@@ -119,6 +214,7 @@ main {
             flex-direction: column;
             gap: 12px;
         }
+
         li::before {
             content: "✅";
             margin-right: 10px;
@@ -133,18 +229,22 @@ main {
         padding: 15px 10px;
         border-radius: 6px;
         margin: 25px auto 25px;
+
         font: {
             family: $font-open-sans;
             weight: bold;
         }
+
         text: {
             transform: uppercase;
             align: center;
         }
     }
+
     .transf-button:hover {
         background-color: #224688;
     }
+
     .transf-button:active {
         background-color: #0d2b5a;
         scale: 0.95;
@@ -160,6 +260,7 @@ main {
         left: 5%;
         top: 80%;
         position: fixed;
+
         background: {
             image: url("../assets/icons/whatsapp-mob.png");
             position: center;
@@ -167,6 +268,7 @@ main {
             size: contain;
         }
     }
+
     .support-float-button-mob:active {
         transform: scale(0.9);
         transition-timing-function: linear;
@@ -180,18 +282,22 @@ main {
         padding: 15px 10px;
         border-radius: 6px;
         margin: 10px auto 25px;
+
         font: {
             family: $font-open-sans;
             weight: bold;
         }
+
         text: {
             transform: uppercase;
             align: center;
         }
     }
+
     .support-button:hover {
         background-color: #0d8f3d;
     }
+
     .support-button:active {
         background-color: #0a6f2e;
         scale: 0.95;
@@ -205,10 +311,12 @@ main {
 footer {
     background-color: #3761b0;
     padding: 20px 0;
+
     .footer-text {
         color: #fff;
         text-align: center;
         line-height: 140%;
+
         font: {
             family: $font-open-sans;
             size: $font-size-small;
@@ -231,26 +339,31 @@ footer {
         height: 1360px !important;
     }
 }
+
 @media screen and (max-width: 520px) {
     .hotmart-checkout {
         height: 1400px !important;
     }
 }
+
 @media screen and (max-width: 500px) {
     .hotmart-checkout {
         height: 1480px !important;
     }
 }
+
 @media screen and (max-width: 430px) {
     .hotmart-checkout {
         height: 1550px !important;
     }
 }
+
 @media screen and (max-width: 390px) {
     .hotmart-checkout {
         height: 1600px !important;
     }
 }
+
 @media screen and (max-width: 330px) {
     .hotmart-checkout {
         height: 1650px !important;

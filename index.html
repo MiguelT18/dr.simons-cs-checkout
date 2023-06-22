@@ -1,101 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Hotmart Checkout</title>
-        <link rel="stylesheet" href="./styles/main.css?t=1621416332" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
-            rel="stylesheet" />
-    </head>
-    <body>
-        <div id="countdown">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotmart Checkout</title>
+    <link rel="stylesheet" href="./styles/main.css?t=1621416332" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="countdown-container">
+        <h1 class="offer">😱El descuento termina en:😱</h1>
+        <div class="countdown">
+            <div class="days-block">
+                <h3 class="days-count" id="days"></h3>
+                <span class="days-text">Días</span>
+            </div>
+            <div class="hours-block">
+                <h3 class="hours-count" id="hours"></h3>
+                <span class="hours-text">Horas</span>
+            </div>
+            <div class="minutes-block">
+                <h3 class="minutes-count" id="minutes"></h3>
+                <span class="minutes-text">Minutos</span>
+            </div>
+            <div class="seconds-block">
+                <h3 class="seconds-count" id="seconds"></h3>
+                <span class="seconds-text">Segundos</span>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-text-container">
+            <h1 class="header-title">Pago de Consulta</h1>
+            <p class="header-text">
+                Para realizar tu pago, por favor sigue estos sencillos pasos viendo el
+                siguiente video:👇👇
+            </p>
+        </div>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/x40D3ZF2V5o" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-instructions-container">
+            <p class="instructions-description">
+                Sigue las instrucciones y completa el formulario de pago para
+                conseguir una consulta con el Dr. Cristian Simons:
+            </p>
+            <ul>
+                <li>
+                    Si optas por Hotmart, completa los datos del checkout que aparecen
+                    en la página.
+                </li>
+                <li>En caso de dudas, contacta al equipo de soporte.</li>
+                <li>
+                    En caso de que quieras realizar el pago a través de una
+                    transferencia bancaria directa al doctor o por código QR dale click
+                    al botón azúl de
+                    <b>"Transferencia Bancaria"</b>
+                </li>
+            </ul>
         </div>
 
-        <header>
-            <div class="header-text-container">
-                <h1 class="header-title">Pago de Consulta</h1>
-                <p class="header-text">
-                    Para realizar tu pago, por favor sigue estos sencillos pasos
-                    viendo el siguiente video:👇👇
-                </p>
-            </div>
-            <!-- <div class="video-wrapper">
-                <iframe
-                    src="https://www.youtube.com/embed/x40D3ZF2V5o"
-                    frameborder="0"
-                    allowfullscreen></iframe>
-            </div> -->
-        </header>
+        <a target="_blank" rel="noopener noreferrer" class="transf-button" href="https://wa.link/vho4gd">Transferencia
+            Bancaria</a>
 
-        <main>
-            <div class="main-instructions-container">
-                <p class="instructions-description">
-                    Sigue las instrucciones y completa el formulario de pago
-                    para conseguir una consulta con el Dr. Cristian Simons:
-                </p>
-                <ul>
-                    <li>
-                        Si optas por Hotmart, completa los datos del checkout
-                        que aparecen en la página.
-                    </li>
-                    <li>En caso de dudas, contacta al equipo de soporte.</li>
-                    <li>
-                        En caso de que quieras realizar el pago a través de una
-                        transferencia bancaria directa al doctor o por código QR
-                        dale click al botón azúl de
-                        <b>"Transferencia Bancaria"</b>
-                    </li>
-                </ul>
-            </div>
+        <a target="_blank" rel="noopener noreferrer" class="support-float-button-mob" href="https://wa.link/9a6ei5"></a>
 
-            <a
-                target="_blank"
-                rel="noopener noreferrer"
-                class="transf-button"
-                href="https://wa.link/vho4gd"
-                >Transferencia Bancaria</a
-            >
+        <!-- Widget Checkout -->
+        <div class="hotmart-checkout-container">
+            <iframe class="hotmart-checkout" name="X-Frame-Options"
+                src="https://pay.hotmart.com/E77601218Y?off=eyw4jv4z" style="width: 100%; height: 1200px"
+                frameborder="0" scrolling="no">
+                ></iframe>
+        </div>
 
-            <a
-                target="_blank"
-                rel="noopener noreferrer"
-                class="support-float-button-mob"
-                href="https://wa.link/9a6ei5"></a>
+        <a target="_blank" rel="noopener noreferrer" class="support-button" href="https://wa.link/9a6ei5">Contacto de
+            Soporte</a>
+    </main>
 
-            <!-- Widget Checkout -->
-            <!-- <div class="hotmart-checkout-container">
-                <iframe
-                    class="hotmart-checkout"
-                    name="X-Frame-Options"
-                    src="https://pay.hotmart.com/E77601218Y?off=eyw4jv4z"
-                    style="width: 100%; height: 1150px"
-                    frameborder="0"
-                    scrolling="no">
-                    ></iframe
-                >
-            </div> -->
+    <footer>
+        <p class="footer-text">
+            © 2023 - La Fabrica Digital<br />
+            Todos los derechos reservados.
+        </p>
+    </footer>
 
-            <a
-                target="_blank"
-                rel="noopener noreferrer"
-                class="support-button"
-                href="https://wa.link/9a6ei5"
-                >Contacto de Soporte</a
-            >
-        </main>
+    <script src="./scripts/countdown.js"></script>
+</body>
 
-        <footer>
-            <p class="footer-text">
-                © 2023 - La Fabrica Digital<br />
-                Todos los derechos reservados.
-            </p>
-        </footer>
-
-        <script src="./scripts/countdown.js"></script>
-    </body>
 </html>

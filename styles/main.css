@@ -23,6 +23,80 @@ a {
   text-decoration: none;
 }
 
+.countdown-container {
+  background-color: rgb(189, 24, 24);
+  padding: 15px 0;
+}
+.countdown-container .offer {
+  text-align: center;
+  color: #fff;
+  font-size: clamp(19px, 5vw, 24px);
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.countdown-container .countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.countdown-container .countdown .days-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.countdown-container .countdown .days-block .days-count {
+  font-size: clamp(19px, 5vw, 24px);
+  font-family: "Poppins", sans-serif;
+}
+.countdown-container .countdown .days-block .days-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(18px, 5vw, 20px);
+}
+.countdown-container .countdown .hours-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.countdown-container .countdown .hours-block .hours-count {
+  font-size: clamp(19px, 5vw, 24px);
+  font-family: "Poppins", sans-serif;
+}
+.countdown-container .countdown .hours-block .hours-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(18px, 5vw, 20px);
+}
+.countdown-container .countdown .minutes-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.countdown-container .countdown .minutes-block .minutes-count {
+  font-size: clamp(19px, 5vw, 24px);
+  font-family: "Poppins", sans-serif;
+}
+.countdown-container .countdown .minutes-block .minutes-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(18px, 5vw, 20px);
+}
+.countdown-container .countdown .seconds-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+.countdown-container .countdown .seconds-block .seconds-count {
+  font-size: clamp(19px, 5vw, 24px);
+  font-family: "Poppins", sans-serif;
+}
+.countdown-container .countdown .seconds-block .seconds-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(18px, 5vw, 20px);
+}
+
 header {
   max-width: 1080px;
   margin: 0 auto;
